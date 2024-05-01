@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+import plotly.express as px
+import plotly.graph_objects as go
 
 '''サンプルコード１'''
 ### データフレームを表示するだけのシンプルなコードです.
@@ -34,14 +35,12 @@ st.write("### 2. 編集可能なテーブルを表示し、結果をグラフ化
 edited_data = st.data_editor(data, num_rows=10) #ここで編集結果を取得している
 
 # 編集結果を表示
-import plotly.express as px
 fig = px.line(edited_data, x='日付', y='温度', title='温度の時系列データ', markers=True)
 st.plotly_chart(fig)
 
 
 '''サンプルコード３'''
 st.write("### 3. 編集結果をインタラクティブなグラフで可視化する")
-import plotly.graph_objects as go
 
 fig = go.Figure()
 fig.add_trace(go.Scatter(x=edited_data['日付'], 
