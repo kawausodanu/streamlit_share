@@ -65,6 +65,7 @@ fig.update_layout(
     xaxis=dict(
         showgrid=False, # x軸のグリッドを非表示
         showline=True, # x軸のラインを表示
+        linecolor='black', # x軸のラインの色
         ticks='inside', # x軸の目盛りを内側に表示
         tickcolor='black', # x軸の目盛りの色
     ),
@@ -73,6 +74,7 @@ fig.update_layout(
         title='温度 [℃]', # y軸のタイトル
         showgrid=False, # y軸のグリッドを非表示
         showline=True, # y軸のラインを表示
+        linecolor='black', # y軸のラインの色
         ticks='inside', # y軸の目盛りを内側に表示
         tickcolor='black', # y軸の目盛りの色
     ),
@@ -83,6 +85,7 @@ fig.update_layout(
         side='right', # 右側に表示
         showgrid=False, # y軸のグリッドを非表示
         showline=True, # y軸のラインを表示
+        linecolor='black', # y軸のラインの色
         ticks='inside', # y軸の目盛りを内側に表示
         tickcolor='black', # y軸の目盛りの色
     )
