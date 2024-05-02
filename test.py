@@ -67,7 +67,7 @@ fig.update_layout(
         showline=True, # x軸のラインを表示
         linecolor='black', # x軸のラインの色
         ticks='inside', # x軸の目盛りを内側に表示
-        # tickcolor='black', # x軸の目盛りの色
+        tickcolor='black', # x軸の目盛りの色
     ),
     # Y軸
     yaxis=dict(
@@ -76,18 +76,18 @@ fig.update_layout(
         showline=True, # y軸のラインを表示
         linecolor='black', # y軸のラインの色
         ticks='inside', # y軸の目盛りを内側に表示
-        # tickcolor='black', # y軸の目盛りの色
+        tickcolor='black', # y軸の目盛りの色
     ),
     # 第二軸
     yaxis2=dict(
         title='湿度 [%]', # 第二軸のタイトル
         overlaying='y', # y軸と重ねる
         side='right', # 右側に表示
-        showgrid=True, # y軸のグリッドを非表示
+        showgrid=False, # y軸のグリッドを非表示
         showline=True, # y軸のラインを表示
         linecolor='black', # y軸のラインの色
         ticks='inside', # y軸の目盛りを内側に表示
-        # tickcolor='black', # y軸の目盛りの色
+        tickcolor='black', # y軸の目盛りの色
     )
 )
 
